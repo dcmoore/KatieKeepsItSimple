@@ -15,6 +15,7 @@ nav {
 
 nav a {
   color: #FFF;
+  padding: 1em;
   text-decoration: none;
 }
 
@@ -22,15 +23,15 @@ nav a:hover {
   text-decoration: underline;
 }
 
-ul {
+nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-li {
+nav li {
   display: inline-block;
-  padding: 1em;
+  padding: 1em 0;
 }
 
 .container {
@@ -113,6 +114,9 @@ a {
   }
   .post {
     padding: 0;
+  }
+  nav li {
+    font-size: 0.8em;
   }
 }
 
