@@ -1,55 +1,68 @@
-@charset "utf-8";
-
 body {
-  background: #d4d4d4 url("../images/background.png");
-  text-align: center;
-  font-family: sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 3em 0;
+  max-width: 960px;
+}
 
 h1 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
-  margin: 0; }
+  color: #ea155c;
+  font-size: 6em;
+  font-family: 'Poiret One', cursive;
+  line-height: 0.9em;
+  margin: 0 0 0.15em 0;
+  text-align: center;
+}
 
-.doc {
-  font-size: 14px;
-  margin: 0; }
-  .doc:before,
-  .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
-  .doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    .doc a:hover {
-      color: #666; }
+h3 {
+  color: #888;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
+/* Image Header Blog Posts */
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
+.med-portrait {
+  float: left;
+  width: 20%;
+}
+
+.large-landscape {
+  float: left;
+  width: 40%;
+}
+
+/* Media Queries
+--------------------------------------------------*/
+@media screen and (max-width: 580px) {
+  .container {
+    padding: 2em 0;
+    width: 90%;
   }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
+  h1 {
+    font-size: 3.75em;
   }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
+}
+
+/* Clearfix
+--------------------------------------------------*/
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+/* For IE */
+.cf {
+  *zoom: 1;
 }
