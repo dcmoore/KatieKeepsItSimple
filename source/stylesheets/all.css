@@ -1,13 +1,13 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
+  font-size: 100%;
   font-weight: normal;
 }
 
 .container {
   margin: 0 auto;
-  padding: 3em 0;
-  max-width: 960px;
+  padding: 3em 1em;
+  max-width: 780px;
 }
 
 h1 {
@@ -26,6 +26,15 @@ h3 {
   text-align: center;
 }
 
+p {
+  color: #555;
+  font-size: 1.1em;
+}
+
+a {
+  color: #ea155c;
+}
+
 /* Image Header Blog Posts */
 
 .med-portrait {
@@ -38,6 +47,27 @@ h3 {
   width: 40%;
 }
 
+/* Blog Posts */
+
+.post {
+  margin: 2em 0;
+  padding: 0 2em;
+}
+
+.post h2 {
+  color: #ea155c;
+  font-size: 3.5em;
+  font-weight: 300;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.post-date {
+  color: #888;
+  display: block;
+  margin-bottom: 2em;
+}
+
 /* Media Queries
 --------------------------------------------------*/
 @media screen and (max-width: 580px) {
@@ -47,6 +77,9 @@ h3 {
   }
   h1 {
     font-size: 3.75em;
+  }
+  .post {
+    padding: 0;
   }
 }
 
